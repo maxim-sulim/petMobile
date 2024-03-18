@@ -28,8 +28,8 @@ struct SearchFlowCoordinator<Content: View>: View {
 
     @ViewBuilder private func linkDestination(link: SearchLink) -> some View {
         switch link {
-        case .link:
-            EmptyView()
+        case let .edit(vacancy):
+            editVacancyDestination(vacancy: vacancy)
         }
     }
 
@@ -37,5 +37,9 @@ struct SearchFlowCoordinator<Content: View>: View {
         EmptyView()
     }
     
-    
+    private func editVacancyDestination(vacancy: Vacancy) -> some View {
+        let viewModel = EditVacancyViewModel(path: $state.path, vacancy: vacancy)
+        let view = EditVacancyView(viewModel: viewModel, inputModel: viewModel.getInputModel())
+        return view
+    }
 }

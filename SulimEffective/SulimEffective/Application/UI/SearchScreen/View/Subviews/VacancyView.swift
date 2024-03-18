@@ -35,7 +35,7 @@ struct VacancyView: View {
             HStack {
                 if inputModel.looking != nil {
                     Text(inputModel.countViewing)
-                        .font(.system(size: 12))
+                        .font(Font(UIFont.Style.text1.font))
                         .foregroundStyle(Color(uiColor: ColorResourceAssets().greenLight))
                 }
                 Spacer()
@@ -65,25 +65,28 @@ struct VacancyView: View {
             HStack {
                 VStack(alignment: .leading, spacing: 10) {
                     Text(inputModel.title)
-                        .font(.title3)
+                        .font(Font(UIFont.Style.title3.font))
                         .foregroundStyle(Color.white)
-                    Text(inputModel.place)
-                        .foregroundStyle(Color.white)
-                        .font(.system(size: 12))
-                    HStack {
-                        Text(inputModel.company)
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text(inputModel.place)
                             .foregroundStyle(Color.white)
-                            .font(.system(size: 12))
-                        Image("check")
+                            .font(Font(UIFont.Style.text1.font))
+                        HStack {
+                            Text(inputModel.company)
+                                .foregroundStyle(Color.white)
+                                .font(Font(UIFont.Style.text1.font))
+                            Image("check")
+                        }
                     }
                     HStack {
                         Image("expirance")
                         Text(inputModel.expirence)
                             .foregroundStyle(Color.white)
-                            .font(.system(size: 12))
+                            .font(Font(UIFont.Style.text1.font))
                     }
                     Text(inputModel.publication)
                         .foregroundStyle(Color(uiColor: ColorResourceAssets().grayLight))
+                        .font(Font(UIFont.Style.text1.font))
                 }
                 Spacer()
             }

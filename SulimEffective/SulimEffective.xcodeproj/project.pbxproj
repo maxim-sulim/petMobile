@@ -47,6 +47,21 @@
 		ABDDF79D2BA6D93A00048ED9 /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDDF79C2BA6D93A00048ED9 /* FavoriteViewModel.swift */; };
 		ABDDF79F2BA6D96300048ED9 /* FavoriteFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDDF79E2BA6D96300048ED9 /* FavoriteFlowCoordinator.swift */; };
 		ABDDF7A12BA6D98000048ED9 /* FavoriteLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDDF7A02BA6D98000048ED9 /* FavoriteLink.swift */; };
+		ABDDF7A82BA6ED5700048ED9 /* EditVacancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDDF7A72BA6ED5700048ED9 /* EditVacancyView.swift */; };
+		ABDDF7AA2BA6ED8500048ED9 /* EditVacancyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDDF7A92BA6ED8500048ED9 /* EditVacancyViewModel.swift */; };
+		ABDDF7AC2BA6EDC900048ED9 /* EditVacancyFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDDF7AB2BA6EDC900048ED9 /* EditVacancyFlowCoordinator.swift */; };
+		ABDDF7AE2BA6EDEB00048ED9 /* EditVacancyLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDDF7AD2BA6EDEB00048ED9 /* EditVacancyLink.swift */; };
+		ABDDF7B12BA6F39000048ED9 /* TopEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDDF7B02BA6F39000048ED9 /* TopEditView.swift */; };
+		ABDDF7B42BA6FD6700048ED9 /* EditVacancyInputModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDDF7B32BA6FD6700048ED9 /* EditVacancyInputModel.swift */; };
+		ABDDF7B62BA72D9A00048ED9 /* VacancyInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDDF7B52BA72D9A00048ED9 /* VacancyInfo.swift */; };
+		ABDDF7B92BA7314200048ED9 /* InterBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDDF7B82BA7314200048ED9 /* InterBarView.swift */; };
+		ABDDF7BB2BA7379000048ED9 /* MapVacancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDDF7BA2BA7379000048ED9 /* MapVacancyView.swift */; };
+		ABDDF7BD2BA73B9100048ED9 /* DescriptionVacancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDDF7BC2BA73B9100048ED9 /* DescriptionVacancyView.swift */; };
+		ABDDF7BF2BA73F0B00048ED9 /* QuestionsVacancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDDF7BE2BA73F0B00048ED9 /* QuestionsVacancyView.swift */; };
+		ABDDF7C42BA74BCC00048ED9 /* SF-Pro-Display-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABDDF7C32BA74BCC00048ED9 /* SF-Pro-Display-Medium.ttf */; };
+		ABDDF7C62BA74BDD00048ED9 /* SF-Pro-Display-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABDDF7C52BA74BDD00048ED9 /* SF-Pro-Display-Regular.ttf */; };
+		ABDDF7C82BA74C1F00048ED9 /* UIFont + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDDF7C72BA74C1F00048ED9 /* UIFont + ext.swift */; };
+		ABDDF7CD2BA74CDB00048ED9 /* SF-Pro-Display-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABDDF7CC2BA74CDB00048ED9 /* SF-Pro-Display-Semibold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,6 +106,22 @@
 		ABDDF79C2BA6D93A00048ED9 /* FavoriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewModel.swift; sourceTree = "<group>"; };
 		ABDDF79E2BA6D96300048ED9 /* FavoriteFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteFlowCoordinator.swift; sourceTree = "<group>"; };
 		ABDDF7A02BA6D98000048ED9 /* FavoriteLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteLink.swift; sourceTree = "<group>"; };
+		ABDDF7A72BA6ED5700048ED9 /* EditVacancyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditVacancyView.swift; sourceTree = "<group>"; };
+		ABDDF7A92BA6ED8500048ED9 /* EditVacancyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditVacancyViewModel.swift; sourceTree = "<group>"; };
+		ABDDF7AB2BA6EDC900048ED9 /* EditVacancyFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditVacancyFlowCoordinator.swift; sourceTree = "<group>"; };
+		ABDDF7AD2BA6EDEB00048ED9 /* EditVacancyLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditVacancyLink.swift; sourceTree = "<group>"; };
+		ABDDF7B02BA6F39000048ED9 /* TopEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopEditView.swift; sourceTree = "<group>"; };
+		ABDDF7B32BA6FD6700048ED9 /* EditVacancyInputModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditVacancyInputModel.swift; sourceTree = "<group>"; };
+		ABDDF7B52BA72D9A00048ED9 /* VacancyInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacancyInfo.swift; sourceTree = "<group>"; };
+		ABDDF7B82BA7314200048ED9 /* InterBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterBarView.swift; sourceTree = "<group>"; };
+		ABDDF7BA2BA7379000048ED9 /* MapVacancyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVacancyView.swift; sourceTree = "<group>"; };
+		ABDDF7BC2BA73B9100048ED9 /* DescriptionVacancyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionVacancyView.swift; sourceTree = "<group>"; };
+		ABDDF7BE2BA73F0B00048ED9 /* QuestionsVacancyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsVacancyView.swift; sourceTree = "<group>"; };
+		ABDDF7C32BA74BCC00048ED9 /* SF-Pro-Display-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Medium.ttf"; sourceTree = "<group>"; };
+		ABDDF7C52BA74BDD00048ED9 /* SF-Pro-Display-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.ttf"; sourceTree = "<group>"; };
+		ABDDF7C72BA74C1F00048ED9 /* UIFont + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont + ext.swift"; sourceTree = "<group>"; };
+		ABDDF7CC2BA74CDB00048ED9 /* SF-Pro-Display-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Semibold.ttf"; sourceTree = "<group>"; };
+		ABDDF7CE2BA74FFD00048ED9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +158,7 @@
 				AB23B5552BA464D500E3830A /* View + ext.swift */,
 				AB23B5572BA469AA00E3830A /* Binding + ext.swift */,
 				AB497F7A2BA5946800966C5C /* UserDefault + ext.swift */,
+				ABDDF7C72BA74C1F00048ED9 /* UIFont + ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -328,6 +360,8 @@
 		AB9374242BA34BAB005DE0F5 /* SulimEffective */ = {
 			isa = PBXGroup;
 			children = (
+				ABDDF7CE2BA74FFD00048ED9 /* Info.plist */,
+				ABDDF7C02BA74B7D00048ED9 /* Font */,
 				AB9374412BA360DE005DE0F5 /* Window */,
 				AB9374422BA3631E005DE0F5 /* Services */,
 				AB9374332BA35D8C005DE0F5 /* Application */,
@@ -358,6 +392,7 @@
 			isa = PBXGroup;
 			children = (
 				AB9374352BA35DB7005DE0F5 /* Content */,
+				ABDDF7A22BA6E78800048ED9 /* EditVacancy */,
 				ABDDF7952BA6D8F500048ED9 /* FavoriteScreen */,
 				AB23B55D2BA47EA600E3830A /* SearchScreen */,
 				AB23B55C2BA47E8500E3830A /* SignUpScreen */,
@@ -496,6 +531,82 @@
 			path = Links;
 			sourceTree = "<group>";
 		};
+		ABDDF7A22BA6E78800048ED9 /* EditVacancy */ = {
+			isa = PBXGroup;
+			children = (
+				ABDDF7B22BA6FD5400048ED9 /* Model */,
+				ABDDF7A62BA6E85600048ED9 /* Links */,
+				ABDDF7A52BA6E84F00048ED9 /* FlowCoordinator */,
+				ABDDF7A42BA6E84900048ED9 /* ViewModel */,
+				ABDDF7A32BA6E84500048ED9 /* View */,
+			);
+			path = EditVacancy;
+			sourceTree = "<group>";
+		};
+		ABDDF7A32BA6E84500048ED9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ABDDF7AF2BA6F38400048ED9 /* Subviews */,
+				ABDDF7A72BA6ED5700048ED9 /* EditVacancyView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ABDDF7A42BA6E84900048ED9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				ABDDF7A92BA6ED8500048ED9 /* EditVacancyViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		ABDDF7A52BA6E84F00048ED9 /* FlowCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				ABDDF7AB2BA6EDC900048ED9 /* EditVacancyFlowCoordinator.swift */,
+			);
+			path = FlowCoordinator;
+			sourceTree = "<group>";
+		};
+		ABDDF7A62BA6E85600048ED9 /* Links */ = {
+			isa = PBXGroup;
+			children = (
+				ABDDF7AD2BA6EDEB00048ED9 /* EditVacancyLink.swift */,
+			);
+			path = Links;
+			sourceTree = "<group>";
+		};
+		ABDDF7AF2BA6F38400048ED9 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				ABDDF7B02BA6F39000048ED9 /* TopEditView.swift */,
+				ABDDF7B52BA72D9A00048ED9 /* VacancyInfo.swift */,
+				ABDDF7B82BA7314200048ED9 /* InterBarView.swift */,
+				ABDDF7BA2BA7379000048ED9 /* MapVacancyView.swift */,
+				ABDDF7BC2BA73B9100048ED9 /* DescriptionVacancyView.swift */,
+				ABDDF7BE2BA73F0B00048ED9 /* QuestionsVacancyView.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		ABDDF7B22BA6FD5400048ED9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ABDDF7B32BA6FD6700048ED9 /* EditVacancyInputModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ABDDF7C02BA74B7D00048ED9 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				ABDDF7CC2BA74CDB00048ED9 /* SF-Pro-Display-Semibold.ttf */,
+				ABDDF7C52BA74BDD00048ED9 /* SF-Pro-Display-Regular.ttf */,
+				ABDDF7C32BA74BCC00048ED9 /* SF-Pro-Display-Medium.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -558,7 +669,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABDDF7C42BA74BCC00048ED9 /* SF-Pro-Display-Medium.ttf in Resources */,
 				AB93742D2BA34BAC005DE0F5 /* Preview Assets.xcassets in Resources */,
+				ABDDF7CD2BA74CDB00048ED9 /* SF-Pro-Display-Semibold.ttf in Resources */,
+				ABDDF7C62BA74BDD00048ED9 /* SF-Pro-Display-Regular.ttf in Resources */,
 				AB93742A2BA34BAC005DE0F5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -572,10 +686,14 @@
 			files = (
 				AB23B5562BA464D500E3830A /* View + ext.swift in Sources */,
 				AB9374522BA37E96005DE0F5 /* EntranceViewModel.swift in Sources */,
+				ABDDF7B42BA6FD6700048ED9 /* EditVacancyInputModel.swift in Sources */,
 				AB23B5432BA4410800E3830A /* EmployerSignUpView.swift in Sources */,
 				AB23B5582BA469AA00E3830A /* Binding + ext.swift in Sources */,
+				ABDDF7AA2BA6ED8500048ED9 /* EditVacancyViewModel.swift in Sources */,
 				AB23B5412BA4403200E3830A /* SignUpView.swift in Sources */,
+				ABDDF7B92BA7314200048ED9 /* InterBarView.swift in Sources */,
 				AB23B5542BA4515100E3830A /* CheckEmailLink.swift in Sources */,
+				ABDDF7AE2BA6EDEB00048ED9 /* EditVacancyLink.swift in Sources */,
 				AB1164232BA39810002CA7A0 /* ContentView.swift in Sources */,
 				AB23B5522BA4513300E3830A /* CheckEmailFlowCoordinator.swift in Sources */,
 				AB23B5452BA44A5400E3830A /* TextFieldView.swift in Sources */,
@@ -586,12 +704,14 @@
 				AB23B5632BA47F0400E3830A /* SearchView.swift in Sources */,
 				ABDDF7A12BA6D98000048ED9 /* FavoriteLink.swift in Sources */,
 				AB497F7B2BA5946800966C5C /* UserDefault + ext.swift in Sources */,
+				ABDDF7B62BA72D9A00048ED9 /* VacancyInfo.swift in Sources */,
 				AB23B5502BA450FD00E3830A /* CheckEmailViewModel.swift in Sources */,
 				AB9374502BA37E78005DE0F5 /* EntranceView.swift in Sources */,
 				AB497F832BA5B43600966C5C /* StorageManager.swift in Sources */,
 				ABDDF79D2BA6D93A00048ED9 /* FavoriteViewModel.swift in Sources */,
 				AB9374442BA36332005DE0F5 /* ProfileManager.swift in Sources */,
 				AB23B5692BA47F2400E3830A /* SearchLink.swift in Sources */,
+				ABDDF7BB2BA7379000048ED9 /* MapVacancyView.swift in Sources */,
 				AB23B5752BA4A80F00E3830A /* NetworkManager.swift in Sources */,
 				AB23B54E2BA4509E00E3830A /* CheckEmailView.swift in Sources */,
 				AB1164252BA39849002CA7A0 /* TabBarViewModel.swift in Sources */,
@@ -604,9 +724,15 @@
 				AB23B5652BA47F0E00E3830A /* SearchViewModel.swift in Sources */,
 				AB9374262BA34BAB005DE0F5 /* SulimEffectiveApp.swift in Sources */,
 				AB23B56F2BA497BC00E3830A /* TopView.swift in Sources */,
+				ABDDF7A82BA6ED5700048ED9 /* EditVacancyView.swift in Sources */,
 				AB9374542BA37EAF005DE0F5 /* EntranceFlowCoordinator.swift in Sources */,
+				ABDDF7AC2BA6EDC900048ED9 /* EditVacancyFlowCoordinator.swift in Sources */,
+				ABDDF7BD2BA73B9100048ED9 /* DescriptionVacancyView.swift in Sources */,
 				AB9374592BA38729005DE0F5 /* TabViewItemType.swift in Sources */,
+				ABDDF7BF2BA73F0B00048ED9 /* QuestionsVacancyView.swift in Sources */,
+				ABDDF7B12BA6F39000048ED9 /* TopEditView.swift in Sources */,
 				AB497F7D2BA594A900966C5C /* UserDefaultService.swift in Sources */,
+				ABDDF7C82BA74C1F00048ED9 /* UIFont + ext.swift in Sources */,
 				AB23B5772BA4A82800E3830A /* HanterModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -744,6 +870,7 @@
 				DEVELOPMENT_TEAM = 65ZT2PZTN2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SulimEffective/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -777,6 +904,7 @@
 				DEVELOPMENT_TEAM = 65ZT2PZTN2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SulimEffective/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

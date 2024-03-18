@@ -54,6 +54,6 @@ final class FavoriteViewModel: FavoriteFlow, Likebutton {
     }
     
     private func fetchInputModel(vacancyCount: Int) {
-        subTitle = "Еще \(vacancyCount) вакансий"
+        subTitle = "\(vacancyCount) вакансий"
     }
 }

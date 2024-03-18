@@ -14,7 +14,7 @@ struct TextFieldInputModel {
 }
 
 struct TextFieldView: View {
-    
+    @Binding var validError: Bool
     @Binding var text: String
     let inputModel: TextFieldInputModel
     
@@ -29,13 +29,17 @@ struct TextFieldView: View {
             TextField(text: $text, label: {
                 Text(inputModel.placeholder)
                     .foregroundStyle(Color(uiColor: ColorResourceAssets().grayLight))
-                    .font(Font.system(size: 14))
+                    .font(Font(UIFont.Style.text1.font))
                     .padding(.leading, 10)
             })
+            .tint(.white)
+            .foregroundStyle(.white)
+            
             Spacer(minLength: 10)
             if text != "" {
                 Button {
                     text = ""
+                    validError = false
                 } label: {
                     Image(systemName: "multiply")
                         .foregroundStyle(Color(uiColor: ColorResourceAssets().grayLight))
@@ -43,10 +47,12 @@ struct TextFieldView: View {
                 }
             }
         }
+        .frame(height: 40)
         .background(RoundedRectangle(cornerRadius: 10)
-            .frame(height: 36)
-            .foregroundStyle(Color(uiColor: ColorResourceAssets().grayMedium))
-            .shadow(color: Color(uiColor: .black).opacity(0.5),
-                    radius: 3, x: 1, y: 5))
+            .foregroundStyle(Color(uiColor: ColorResourceAssets().grayMedium)))
+        .overlay(RoundedRectangle(cornerRadius: 10)
+            .stroke(validError ? Color.red : Color.clear, lineWidth: 1))
+        .shadow(color: Color(uiColor: .black).opacity(0.5),
+                radius: 3, x: 1, y: 5)
     }
 }

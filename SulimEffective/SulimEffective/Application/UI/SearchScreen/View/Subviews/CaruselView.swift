@@ -50,20 +50,20 @@ struct CaruselView: View {
                             .padding(.vertical, 10)
                         Text(element.title)
                             .foregroundStyle(.white)
-                            .font(Font.system(size: 12))
-                            .padding(.bottom, 5)
+                            .font(Font(UIFont.Style.title4.font))
+                            .padding(.bottom, 2)
                         if let button = element.button {
                             Button {
                                 
                             } label: {
                                 Text(button)
                                     .foregroundStyle(Color(uiColor: ColorResourceAssets().greenLight))
-                                    .font(Font.system(size: 12))
+                                    .font(Font(UIFont.Style.text1.font))
                             }
                         }
                         Spacer()
                     }
-                    .frame(width: 138, height: 120)
+                    .frame(width: 132, height: 120)
                     .background(RoundedRectangle(cornerRadius: 10)
                         .foregroundStyle(Color(uiColor: ColorResourceAssets().grayMedium)))
                 }

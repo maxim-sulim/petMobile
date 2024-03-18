@@ -21,17 +21,6 @@ final class SearchViewModel: SearchFlowState, Likebutton {
         }
     }
     
-    func likeVacancy(vakancy: Vacancy) async {
-        storageManager.setVacancy(vakancy: vakancy)
-    }
-    
-    func unlikeVacancy(vakancy: Vacancy) async {
-        storageManager.removeVacancy(vakancy: vakancy)
-    }
-    func getTitleButton() -> String {
-        titleButton
-    }
-    
     private func loadVacancy() async throws {
         let networkManager: NetworkManagerProtocol = NetworkManager()
         var model = try await networkManager.getDataSearch()
@@ -61,6 +50,19 @@ final class SearchViewModel: SearchFlowState, Likebutton {
         return vacancyLike.contains(where: {$0.id == vacancy.id})
     }
     
+    //MARK: - Public
+    func likeVacancy(vakancy: Vacancy) async {
+        storageManager.setVacancy(vakancy: vakancy)
+    }
+    
+    func unlikeVacancy(vakancy: Vacancy) async {
+        storageManager.removeVacancy(vakancy: vakancy)
+    }
+    
+    func getTitleButton() -> String {
+        titleButton
+    }
+    
     func fethLikeVacancy() {
         vacancyInputModel = vacancyInputModel.map({
             VacancyInputModel(islike: checkLikeVaccancy(vacancy: $0.object),
@@ -73,5 +75,9 @@ final class SearchViewModel: SearchFlowState, Likebutton {
                               publication: $0.publication,
                               object: $0.object)
         })
+    }
+    
+    func vacancyTapped(vacancy: Vacancy) {
+        path.append(SearchLink.edit(vacancy))
     }
 }

@@ -20,36 +20,37 @@ struct FavoriteView: View {
     @ViewBuilder private func content() -> some View {
         ZStack {
             Color.black.ignoresSafeArea()
-            ScrollView(.vertical) {
-                VStack(spacing: 20) {
-                    VStack(spacing: 30) {
-                        HStack {
-                            Text(viewModel.title)
-                                .font(.title2)
-                                .foregroundStyle(.white)
-                            Spacer()
-                        }
-                        HStack {
-                            Text(viewModel.subTitle)
-                                .font(.title3)
-                                .foregroundStyle(.gray)
-                            Spacer()
-                        }
+            VStack(spacing: 6) {
+                VStack(spacing: 30) {
+                    HStack {
+                        Text(viewModel.title)
+                            .font(Font(UIFont.Style.title2.font))
+                            .foregroundStyle(.white)
+                        Spacer()
                     }
-                    Spacer(minLength: 10)
+                    HStack {
+                        Text(viewModel.subTitle)
+                            .font(Font(UIFont.Style.text1.font))
+                            .foregroundStyle(.gray)
+                        Spacer()
+                    }
+                }
+                .padding(.horizontal, 10)
+                Spacer(minLength: 10)
+                ScrollView(.vertical) {
                     ForEach(viewModel.vacancyInputModel, id: \.id) { element in
                         VacancyView(isLike: element.islike,
                                     inputModel: element,
                                     delegate: viewModel)
-                            .padding(.horizontal, 10)
-                            .padding(.bottom, 10)
+                        .padding(.horizontal, 10)
+                        .padding(.bottom, 10)
                     }
-                    Spacer()
                 }
-                .onAppear() {
-                    Task {
-                        await viewModel.loadFavorite()
-                    }
+                Spacer()
+            }
+            .onAppear() {
+                Task {
+                    await viewModel.loadFavorite()
                 }
             }
         }

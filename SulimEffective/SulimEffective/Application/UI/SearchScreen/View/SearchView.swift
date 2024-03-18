@@ -29,7 +29,7 @@ struct SearchView: View {
                     Spacer(minLength: 20)
                     HStack {
                         Text("Вакансии для вас")
-                            .font(.title2)
+                            .font(Font(UIFont.Style.title2.font))
                             .foregroundStyle(.white)
                         Spacer()
                     }
@@ -38,13 +38,16 @@ struct SearchView: View {
                         VacancyView(isLike: element.islike,
                                     inputModel: element,
                                     delegate: viewModel)
+                        .onTapGesture {
+                            viewModel.vacancyTapped(vacancy: element.object)
+                        }
                             .padding(.horizontal, 10)
                             .padding(.bottom, 10)
                     }
                     Button(viewModel.getTitleButton()) {
                         
                     }
-                    .buttonStyle(ButtonFill())
+                    .buttonStyle(ButtonFill(color: Color(uiColor: ColorResourceAssets().blue)))
                 }
             }
             .onAppear() {

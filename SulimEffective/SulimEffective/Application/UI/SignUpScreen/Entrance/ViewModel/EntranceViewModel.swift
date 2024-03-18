@@ -11,13 +11,22 @@ import SwiftUI
 @MainActor
 final class EntranceViewModel: EntranceFlowState {
     
+    @Published var validError: Bool = false
+    private var textFiled = ""
     
     func nextTapped(email: String, selected: Binding<TabViewItemType>) {
         if isValidEmail(email: email) {
             showCheckEmail(selected: selected, email: email)
         } else {
-            print("false valid")
+            validError = true
         }
+    }
+    
+    func checkError(text: String) {
+        if textFiled != text {
+            validError = false
+        }
+        textFiled = text
     }
     
     private func showCheckEmail(selected: Binding<TabViewItemType>, email: String) {

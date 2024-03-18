@@ -58,7 +58,7 @@ struct TabBarView: View {
     }
     
     @ViewBuilder private func favorite() -> some View {
-        if viewModel.authToken() {
+        if !viewModel.authToken() {
             FavoriteView(viewModel: FavoriteViewModel())
         } else {
             EntranceView(viewModel: EntranceViewModel(), selection: $selection)

@@ -10,10 +10,10 @@ import SwiftUI
 
 struct TopView: View {
     @Binding var searchText: String
-    
+    @State var mockError = false
     var body: some View {
         HStack(spacing: 20) {
-            TextFieldView(text: $searchText, inputModel: TextFieldInputModel(image: "magnifier",
+            TextFieldView(validError: $mockError, text: $searchText, inputModel: TextFieldInputModel(image: "magnifier",
                                                                              placeholder: "Должность, ключевые слова"))
             Button {
                 

@@ -27,10 +27,10 @@ struct CheckEmailView: View {
             Color.black.ignoresSafeArea()
             VStack(alignment: .leading, spacing: 20) {
                 Text(viewModel.inputModel.title)
-                    .font(.title2)
+                    .font(Font(UIFont.Style.title2.font))
                     .foregroundStyle(.white)
                 Text(viewModel.inputModel.message)
-                    .font(.title3)
+                    .font(Font(UIFont.Style.title3.font))
                     .foregroundStyle(.white)
                 
                 HStack(spacing: 10) {
@@ -61,11 +61,14 @@ struct CheckEmailView: View {
                     showKeyBoard = true
                 }
                 
-                Button("Подтвердить") {
+                Button {
                     selection = .search
                     viewModel.setCurrentUser()
+                } label: {
+                    Text("Подтвердить")
+                        .font(Font(UIFont.Style.buttonText1.font))
                 }
-                .buttonStyle(ButtonFill())
+                .buttonStyle(ButtonFill(color: Color(uiColor: ColorResourceAssets().blue)))
                 .frame(maxWidth: .infinity)
                 .disableWithOpacity(otpText.count < 4)
             }

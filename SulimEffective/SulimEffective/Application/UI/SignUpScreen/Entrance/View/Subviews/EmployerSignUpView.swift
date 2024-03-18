@@ -14,19 +14,22 @@ struct EmployerSignUpView: View {
             HStack {
                 Text("Поиск сотрудников")
                     .foregroundStyle(.white)
-                    .font(.title3)
+                    .font(Font(UIFont.Style.title3.font))
                 Spacer()
             }
             .padding(.leading, 20)
             HStack {
                 Text("Размещение вакансий и доступ к базе резюме")
                     .foregroundStyle(.white)
-                    .font(Font.system(size: 13))
+                    .font(Font(UIFont.Style.buttonText2.font))
                 Spacer()
             }
             .padding(.leading, 20)
-            Button("Я ищу сотрудников") {
+            Button {
                 
+            } label: {
+                Text("Я ищу сотрудников")
+                    .font(Font(UIFont.Style.buttonText2.font))
             }
             .buttonStyle(ButtonFillCapsule())
             Spacer(minLength: 20)

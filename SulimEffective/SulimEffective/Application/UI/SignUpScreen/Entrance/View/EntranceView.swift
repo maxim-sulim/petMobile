@@ -23,8 +23,7 @@ struct EntranceView: View {
             VStack(spacing: 20) {
                 HStack {
                     Text("Вход в личный кабинет")
-                        .font(.title2)
-                        .foregroundStyle(.white)
+                        .font(Font(UIFont.Style.title2.font))
                     Spacer()
                 }
                 Spacer()
