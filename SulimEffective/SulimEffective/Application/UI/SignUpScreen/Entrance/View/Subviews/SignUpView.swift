@@ -11,6 +11,7 @@ import Combine
 struct SignUpView: View {
     @Binding var text: String
     @Binding var selected: TabViewItemType
+    @Binding var isAuth: Bool
     @EnvironmentObject var viewModel: EntranceViewModel
     
     var body: some View {
@@ -40,7 +41,9 @@ struct SignUpView: View {
                 }
                 HStack(spacing: 60) {
                     Button {
-                        viewModel.nextTapped(email: text, selected: $selected)
+                        viewModel.nextTapped(email: text,
+                                             selected: $selected,
+                                             isAuth: $isAuth)
                     } label: {
                          Text("Продолжить")
                             .font(Font(UIFont.Style.buttonText2.font))

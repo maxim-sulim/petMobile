@@ -39,7 +39,9 @@ struct EntranceFlowCoordinator<Content: View>: View {
     
     private func checkEmailDestination(model: CheckEmailModel) -> some View {
         let viewModel = CheckEmailViewModel(path: $state.path, email: model.email)
-        let view = CheckEmailView(selection: model.selection, viewModel: viewModel)
+        let view = CheckEmailView(isAuth: model.isAuth,
+                                  selection: model.selection,
+                                  viewModel: viewModel)
         return view
     }
 }

@@ -35,6 +35,6 @@ struct InterBarView: View {
         .padding(.leading, 10)
         .frame(width: 180, height: 60)
         .background(RoundedRectangle(cornerRadius: 10)
-            .foregroundStyle(Color(uiColor: ColorResourceAssets().greenLight)))
+            .foregroundStyle(Color(uiColor: ColorResourceAssets().darkGreen)))
     }
 }

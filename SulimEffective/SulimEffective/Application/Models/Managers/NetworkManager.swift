@@ -12,16 +12,16 @@ protocol NetworkManagerProtocol: AnyObject {
 }
 
 final class NetworkManager {
+    let networkService: NetworkServiceProtocol
     
+    init() {
+        self.networkService = NetworkService()
+    }
 }
 
 extension NetworkManager: NetworkManagerProtocol {
     func getDataSearch() async throws -> Hanter {
-        let urlApi = "https://run.mocky.io/v3/ed41d10e-0c1f-4439-94fa-9702c9d95c14"
-        guard let url = URL(string: urlApi) else {
-            throw URLError(.badURL)
-        }
-        let (data, response) = try await URLSession.shared.data(from: url)
+        let (data, response) = try await networkService.get(path: .vacancy)
         
         guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
             throw URLError(.badServerResponse)

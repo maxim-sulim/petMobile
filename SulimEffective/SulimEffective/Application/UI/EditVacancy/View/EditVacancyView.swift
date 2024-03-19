@@ -21,14 +21,16 @@ struct EditVacancyView: View {
     @ViewBuilder private func content() -> some View {
         ZStack {
             Color.black.ignoresSafeArea()
-            VStack(spacing: 20) {
+            VStack(alignment: .leading, spacing: 20) {
                 TopEditView()
                     .environmentObject(viewModel)
+                    .padding(.bottom, 12)
                 ScrollView(.vertical) {
                     VacancyInfo(inputModel: InfoVacancyInputModel(title: inputModel.title,
                                                                   salary: inputModel.salary,
                                                                   experience: inputModel.experience,
                                                                   schedules: inputModel.schedules))
+                    Spacer(minLength: 20)
                     if inputModel.looking != nil || inputModel.applied != nil {
                         HStack {
                             if let applied = inputModel.applied {
@@ -43,9 +45,11 @@ struct EditVacancyView: View {
                                 Spacer()
                             }
                         }
+                        .padding(.bottom, 6)
                     }
                     MapVacancyView(inputModel: MapVacancyInputModel(company: inputModel.company,
                                                                     address: inputModel.address))
+                    .padding(.bottom, 6)
                     if let description = inputModel.description {
                         DescriptionVacancyView(description: description)
                             .padding(.top, 6)

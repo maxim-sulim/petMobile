@@ -21,6 +21,7 @@ struct CheckEmailViewInputModel {
 struct CheckEmailModel {
     let email: String
     var selection: Binding<TabViewItemType>
+    var isAuth: Binding<Bool>
 }
 
 @MainActor

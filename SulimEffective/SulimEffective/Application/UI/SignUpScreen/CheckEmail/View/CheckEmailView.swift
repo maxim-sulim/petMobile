@@ -12,6 +12,7 @@ import Combine
 
 struct CheckEmailView: View {
     
+    @Binding var isAuth: Bool
     @Binding var selection: TabViewItemType
     @StateObject var viewModel: CheckEmailViewModel
     @FocusState private var showKeyBoard: Bool
@@ -63,6 +64,7 @@ struct CheckEmailView: View {
                 
                 Button {
                     selection = .search
+                    isAuth = true
                     viewModel.setCurrentUser()
                 } label: {
                     Text("Подтвердить")

@@ -32,13 +32,11 @@ enum TabViewItemType: String, Hashable {
 
 struct TabViewItem: View {
     var type: TabViewItemType
-
+    
     var body: some View {
         VStack {
             type.image
-                .foregroundStyle(Color(uiColor: ColorResourceAssets().grayLight))
             type.text
-                .foregroundStyle(Color(uiColor: ColorResourceAssets().grayLight))
         }
     }
 }

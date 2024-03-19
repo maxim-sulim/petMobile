@@ -14,9 +14,9 @@ final class EntranceViewModel: EntranceFlowState {
     @Published var validError: Bool = false
     private var textFiled = ""
     
-    func nextTapped(email: String, selected: Binding<TabViewItemType>) {
+    func nextTapped(email: String, selected: Binding<TabViewItemType>, isAuth:Binding<Bool>) {
         if isValidEmail(email: email) {
-            showCheckEmail(selected: selected, email: email)
+            showCheckEmail(selected: selected, email: email, isAuth: isAuth)
         } else {
             validError = true
         }
@@ -29,8 +29,8 @@ final class EntranceViewModel: EntranceFlowState {
         textFiled = text
     }
     
-    private func showCheckEmail(selected: Binding<TabViewItemType>, email: String) {
-        path.append(EntranceLink.checkEmail(CheckEmailModel(email: email, selection: selected)))
+    private func showCheckEmail(selected: Binding<TabViewItemType>, email: String, isAuth: Binding<Bool>) {
+        path.append(EntranceLink.checkEmail(CheckEmailModel(email: email, selection: selected, isAuth: isAuth)))
     }
     
     private func isValidEmail(email: String) -> Bool {

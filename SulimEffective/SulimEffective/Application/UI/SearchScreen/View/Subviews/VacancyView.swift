@@ -29,6 +29,7 @@ struct VacancyView: View {
     @State var isLike: Bool
     let inputModel: VacancyInputModel
     var delegate: Likebutton
+    @Binding var favoriteCount: Int
     
     var body: some View {
         ZStack() {
@@ -39,8 +40,10 @@ struct VacancyView: View {
                         Task {
                             if isLike {
                                 await delegate.unlikeVacancy(vakancy: inputModel.object)
+                                favoriteCount -= 1
                             } else {
                                 await delegate.likeVacancy(vakancy: inputModel.object)
+                                favoriteCount += 1
                             }
                             isLike.toggle()
                         }
@@ -70,6 +73,7 @@ struct VacancyView: View {
                         Text(inputModel.title)
                             .font(Font(UIFont.Style.title3.font))
                             .foregroundStyle(Color.white)
+                            .padding(.trailing, 40)
                         VStack(alignment: .leading, spacing: 4) {
                             Text(inputModel.place)
                                 .foregroundStyle(Color.white)

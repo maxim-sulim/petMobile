@@ -11,7 +11,7 @@ import Foundation
 final class SearchViewModel: SearchFlowState, Likebutton {
     @Published var vacancyInputModel: [VacancyInputModel] = []
     var titleButton = "Ищем вакансии"
-    let storageManager: StorageManagerProtocol
+    private let storageManager: StorageManagerProtocol
     
     override init() {
         self.storageManager = StorageManager()

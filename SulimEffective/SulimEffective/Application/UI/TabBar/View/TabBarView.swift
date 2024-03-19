@@ -9,9 +9,10 @@ import Foundation
 import SwiftUI
 
 struct TabBarView: View {
-    
-    @StateObject var viewModel = TabBarViewModel()
+    @StateObject var viewModel: TabBarViewModel
     @State private var selection = TabViewItemType.heart
+    @State var isAuth: Bool
+    @State var favoriteCount: Int
     
     var body: some View {
         content()
@@ -19,7 +20,7 @@ struct TabBarView: View {
     
     @ViewBuilder private func content() -> some View {
         TabView(selection: $selection) {
-            SearchView(viewModel: SearchViewModel())
+            SearchView(viewModel: SearchViewModel(), favoriteCount: $favoriteCount)
             .tabItem {
                 TabViewItem(type: .search)
             }
@@ -30,26 +31,21 @@ struct TabBarView: View {
                 TabViewItem(type: .heart)
             }
             .tag(TabViewItemType.heart)
+            .badge(favoriteCount)
             
-            ZStack {
-                Color.black
-            }
+            MockView()
             .tabItem {
                 TabViewItem(type: .responses)
             }
             .tag(TabViewItemType.responses)
             
-            ZStack {
-                Color.black
-            }
+            MockView()
             .tabItem {
                 TabViewItem(type: .message)
             }
             .tag(TabViewItemType.message)
             
-            ZStack {
-                Color.black
-            }
+            MockView()
             .tabItem {
                 TabViewItem(type: .profile)
             }
@@ -58,10 +54,13 @@ struct TabBarView: View {
     }
     
     @ViewBuilder private func favorite() -> some View {
-        if viewModel.authToken() {
-            FavoriteView(viewModel: FavoriteViewModel())
+        if isAuth {
+            FavoriteView(viewModel: FavoriteViewModel(),
+                         favoriteCount: $favoriteCount)
         } else {
-            EntranceView(viewModel: EntranceViewModel(), selection: $selection)
+            EntranceView(viewModel: EntranceViewModel(),
+                         selection: $selection,
+                         isAuth: $isAuth)
         }
     }
 }

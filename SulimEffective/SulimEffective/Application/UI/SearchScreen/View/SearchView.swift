@@ -11,6 +11,7 @@ import SwiftUI
 struct SearchView: View {
     @StateObject var viewModel: SearchViewModel
     @State var searchText: String = ""
+    @Binding var favoriteCount: Int
     
     var body: some View {
         SearchFlowCoordinator(state: viewModel, content: content)
@@ -22,11 +23,11 @@ struct SearchView: View {
             VStack(spacing: 16) {
                 TopView(searchText: $searchText)
                     .padding(.horizontal, 10)
-                Spacer(minLength: 10)
+                    .padding(.bottom, 6)
                 ScrollView(.vertical) {
                     CaruselView(inputModel: CaruselInputModel.mockInit())
                         .padding(.leading, 10)
-                    Spacer(minLength: 20)
+                    Spacer(minLength: 30)
                     HStack {
                         Text("Вакансии для вас")
                             .font(Font(UIFont.Style.title2.font))
@@ -37,7 +38,8 @@ struct SearchView: View {
                     ForEach(viewModel.vacancyInputModel, id: \.id) { element in
                         VacancyView(isLike: element.islike,
                                     inputModel: element,
-                                    delegate: viewModel)
+                                    delegate: viewModel,
+                                    favoriteCount: $favoriteCount)
                         .onTapGesture {
                             viewModel.vacancyTapped(vacancy: element.object)
                         }
@@ -49,6 +51,12 @@ struct SearchView: View {
                     }
                     .buttonStyle(ButtonFill(color: Color(uiColor: ColorResourceAssets().blue)))
                 }
+                .scrollIndicators(.hidden)
+                Rectangle()
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 1)
+                    .foregroundStyle(.gray)
+                    .opacity(0.3)
             }
             .onAppear() {
                 Task {

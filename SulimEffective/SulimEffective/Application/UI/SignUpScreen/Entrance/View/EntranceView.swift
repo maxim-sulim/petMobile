@@ -11,6 +11,7 @@ import SwiftUI
 struct EntranceView: View {
     @StateObject var viewModel: EntranceViewModel
     @Binding var selection: TabViewItemType
+    @Binding var isAuth: Bool
     @State var text: String = ""
     
     var body: some View {
@@ -27,10 +28,17 @@ struct EntranceView: View {
                     Spacer()
                 }
                 Spacer()
-                SignUpView(text: $text, selected: $selection)
+                SignUpView(text: $text,
+                           selected: $selection,
+                           isAuth: $isAuth)
                     .environmentObject(viewModel)
                 EmployerSignUpView()
                 Spacer()
+                Rectangle()
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 1)
+                    .foregroundStyle(.gray)
+                    .opacity(0.3)
             }
             .frame(maxWidth: .infinity, alignment: .top)
         }

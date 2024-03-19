@@ -8,10 +8,10 @@
 import Foundation
 import SwiftUI
 
-
 struct FavoriteView: View {
     
     @StateObject var viewModel: FavoriteViewModel
+    @Binding var favoriteCount: Int
     
     var body: some View {
         FavoriteFlowCoordinator(state: viewModel, content: content)
@@ -41,12 +41,17 @@ struct FavoriteView: View {
                     ForEach(viewModel.vacancyInputModel, id: \.id) { element in
                         VacancyView(isLike: element.islike,
                                     inputModel: element,
-                                    delegate: viewModel)
+                                    delegate: viewModel,
+                                    favoriteCount: $favoriteCount)
                         .padding(.horizontal, 10)
-                        .padding(.bottom, 10)
                     }
                 }
                 Spacer()
+                Rectangle()
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 1)
+                    .foregroundStyle(.gray)
+                    .opacity(0.3)
             }
             .onAppear() {
                 Task {

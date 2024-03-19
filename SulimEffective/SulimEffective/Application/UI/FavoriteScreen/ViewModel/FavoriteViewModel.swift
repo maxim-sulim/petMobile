@@ -14,7 +14,7 @@ final class FavoriteViewModel: FavoriteFlow, Likebutton {
     @Published var vacancyInputModel: [VacancyInputModel] = []
     var title = "Избранное"
     var subTitle = ""
-    let storageManager: StorageManagerProtocol
+    private let storageManager: StorageManagerProtocol
     
     override init() {
         self.storageManager = StorageManager()
