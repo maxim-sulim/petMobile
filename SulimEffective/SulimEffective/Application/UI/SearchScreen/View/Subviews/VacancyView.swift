@@ -31,73 +31,77 @@ struct VacancyView: View {
     var delegate: Likebutton
     
     var body: some View {
-        VStack(spacing: 10) {
+        ZStack() {
             HStack {
-                if inputModel.looking != nil {
-                    Text(inputModel.countViewing)
-                        .font(Font(UIFont.Style.text1.font))
-                        .foregroundStyle(Color(uiColor: ColorResourceAssets().greenLight))
-                }
                 Spacer()
-                Button {
-                    Task {
-                        if isLike {
-                            await delegate.unlikeVacancy(vakancy: inputModel.object)
-                        } else {
-                            await delegate.likeVacancy(vakancy: inputModel.object)
+                VStack {
+                    Button {
+                        Task {
+                            if isLike {
+                                await delegate.unlikeVacancy(vakancy: inputModel.object)
+                            } else {
+                                await delegate.likeVacancy(vakancy: inputModel.object)
+                            }
+                            isLike.toggle()
                         }
-                        isLike.toggle()
+                    } label: {
+                        if isLike {
+                            Image("activeHeart")
+                                .resizable()
+                                .frame(width: 24, height: 24)
+                        } else {
+                            Image("heart")
+                                .resizable()
+                                .frame(width: 24, height: 22)
+                        }
                     }
-                } label: {
-                    if isLike {
-                        Image("activeHeart")
-                            .resizable()
-                            .frame(width: 24, height: 24)
-                    } else {
-                        Image("heart")
-                            .resizable()
-                            .frame(width: 24, height: 22)
-                    }
+                    Spacer()
                 }
             }
-            .frame(height: 35)
             .padding(.horizontal, 20)
-            HStack {
-                VStack(alignment: .leading, spacing: 10) {
-                    Text(inputModel.title)
-                        .font(Font(UIFont.Style.title3.font))
-                        .foregroundStyle(Color.white)
-                    VStack(alignment: .leading, spacing: 4) {
-                        Text(inputModel.place)
+            VStack(spacing: 10) {
+                HStack {
+                    VStack(alignment: .leading, spacing: 10) {
+                        if inputModel.looking != nil {
+                            Text(inputModel.countViewing)
+                                .font(Font(UIFont.Style.text1.font))
+                                .foregroundStyle(Color(uiColor: ColorResourceAssets().greenLight))
+                        }
+                        Text(inputModel.title)
+                            .font(Font(UIFont.Style.title3.font))
                             .foregroundStyle(Color.white)
-                            .font(Font(UIFont.Style.text1.font))
-                        HStack {
-                            Text(inputModel.company)
+                        VStack(alignment: .leading, spacing: 4) {
+                            Text(inputModel.place)
                                 .foregroundStyle(Color.white)
                                 .font(Font(UIFont.Style.text1.font))
-                            Image("check")
+                            HStack {
+                                Text(inputModel.company)
+                                    .foregroundStyle(Color.white)
+                                    .font(Font(UIFont.Style.text1.font))
+                                Image("check")
+                            }
                         }
-                    }
-                    HStack {
-                        Image("expirance")
-                        Text(inputModel.expirence)
-                            .foregroundStyle(Color.white)
+                        HStack {
+                            Image("expirance")
+                            Text(inputModel.expirence)
+                                .foregroundStyle(Color.white)
+                                .font(Font(UIFont.Style.text1.font))
+                        }
+                        Text(inputModel.publication)
+                            .foregroundStyle(Color(uiColor: ColorResourceAssets().grayLight))
                             .font(Font(UIFont.Style.text1.font))
                     }
-                    Text(inputModel.publication)
-                        .foregroundStyle(Color(uiColor: ColorResourceAssets().grayLight))
-                        .font(Font(UIFont.Style.text1.font))
+                    Spacer()
                 }
-                Spacer()
-            }
-            .padding(.leading, 20)
-            Button("Откликнуться") {
+                .padding(.leading, 20)
+                Button("Откликнуться") {
+                    
+                }
+                .buttonStyle(ButtonFillCapsule())
                 
             }
-            .buttonStyle(ButtonFillCapsule())
-            
         }
-        .padding(.top, 10)
+        .padding(.vertical, 10)
         .frame(maxWidth: .infinity)
         .background(RoundedRectangle(cornerRadius: 10)
             .foregroundStyle(Color(uiColor: ColorResourceAssets().grayMedium)))

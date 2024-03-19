@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>more human count</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@human_count@</string>
+		<key>human_count</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>other</key>
+			<string>%d человека</string>
+			<key>zero</key>
+			<string>%d человек</string>
+			<key>one</key>
+			<string>%d человека</string>
+			<key>few</key>
+			<string>%d человека</string>
+			<key>many</key>
+			<string>%d человек</string>
+		</dict>
+	</dict>
+	<key>more vacancy count</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@vacancy_count@</string>
+		<key>vacancy_count</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>zero</key>
+			<string>вакансий</string>
+			<key>one</key>
+			<string>%d вакансия</string>
+			<key>few</key>
+			<string>%d вакансии</string>
+			<key>many</key>
+			<string>%d вакансии</string>
+			<key>other</key>
+			<string>%d вакансии</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

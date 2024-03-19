@@ -34,6 +34,7 @@
 		AB497F7B2BA5946800966C5C /* UserDefault + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB497F7A2BA5946800966C5C /* UserDefault + ext.swift */; };
 		AB497F7D2BA594A900966C5C /* UserDefaultService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB497F7C2BA594A900966C5C /* UserDefaultService.swift */; };
 		AB497F832BA5B43600966C5C /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB497F822BA5B43600966C5C /* StorageManager.swift */; };
+		AB664EAA2BA99A0E00BCD83C /* Collection + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB664EA92BA99A0E00BCD83C /* Collection + ext.swift */; };
 		AB9374262BA34BAB005DE0F5 /* SulimEffectiveApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9374252BA34BAB005DE0F5 /* SulimEffectiveApp.swift */; };
 		AB93742A2BA34BAC005DE0F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB9374292BA34BAC005DE0F5 /* Assets.xcassets */; };
 		AB93742D2BA34BAC005DE0F5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB93742C2BA34BAC005DE0F5 /* Preview Assets.xcassets */; };
@@ -62,6 +63,9 @@
 		ABDDF7C62BA74BDD00048ED9 /* SF-Pro-Display-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABDDF7C52BA74BDD00048ED9 /* SF-Pro-Display-Regular.ttf */; };
 		ABDDF7C82BA74C1F00048ED9 /* UIFont + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDDF7C72BA74C1F00048ED9 /* UIFont + ext.swift */; };
 		ABDDF7CD2BA74CDB00048ED9 /* SF-Pro-Display-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABDDF7CC2BA74CDB00048ED9 /* SF-Pro-Display-Semibold.ttf */; };
+		ABE4718A2BA85E2600E5A75E /* LocalizableString.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE471892BA85E2600E5A75E /* LocalizableString.swift */; };
+		ABE4718C2BA85E4000E5A75E /* LocalizableAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE4718B2BA85E4000E5A75E /* LocalizableAssets.swift */; };
+		ABE471952BA879F900E5A75E /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = ABE471972BA879F900E5A75E /* Localizable.stringsdict */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +96,8 @@
 		AB497F7A2BA5946800966C5C /* UserDefault + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefault + ext.swift"; sourceTree = "<group>"; };
 		AB497F7C2BA594A900966C5C /* UserDefaultService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultService.swift; sourceTree = "<group>"; };
 		AB497F822BA5B43600966C5C /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		AB664EA82BA9866C00BCD83C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = ru; path = ru.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		AB664EA92BA99A0E00BCD83C /* Collection + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection + ext.swift"; sourceTree = "<group>"; };
 		AB9374222BA34BAB005DE0F5 /* SulimEffective.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SulimEffective.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB9374252BA34BAB005DE0F5 /* SulimEffectiveApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SulimEffectiveApp.swift; sourceTree = "<group>"; };
 		AB9374292BA34BAC005DE0F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -121,7 +127,9 @@
 		ABDDF7C52BA74BDD00048ED9 /* SF-Pro-Display-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.ttf"; sourceTree = "<group>"; };
 		ABDDF7C72BA74C1F00048ED9 /* UIFont + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont + ext.swift"; sourceTree = "<group>"; };
 		ABDDF7CC2BA74CDB00048ED9 /* SF-Pro-Display-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Semibold.ttf"; sourceTree = "<group>"; };
-		ABDDF7CE2BA74FFD00048ED9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		ABDDF7CE2BA74FFD00048ED9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABE471892BA85E2600E5A75E /* LocalizableString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableString.swift; sourceTree = "<group>"; };
+		ABE4718B2BA85E4000E5A75E /* LocalizableAssets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableAssets.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +167,7 @@
 				AB23B5572BA469AA00E3830A /* Binding + ext.swift */,
 				AB497F7A2BA5946800966C5C /* UserDefault + ext.swift */,
 				ABDDF7C72BA74C1F00048ED9 /* UIFont + ext.swift */,
+				AB664EA92BA99A0E00BCD83C /* Collection + ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -360,12 +369,10 @@
 		AB9374242BA34BAB005DE0F5 /* SulimEffective */ = {
 			isa = PBXGroup;
 			children = (
-				ABDDF7CE2BA74FFD00048ED9 /* Info.plist */,
-				ABDDF7C02BA74B7D00048ED9 /* Font */,
 				AB9374412BA360DE005DE0F5 /* Window */,
+				ABE471872BA85DDD00E5A75E /* Resources */,
 				AB9374422BA3631E005DE0F5 /* Services */,
 				AB9374332BA35D8C005DE0F5 /* Application */,
-				AB9374292BA34BAC005DE0F5 /* Assets.xcassets */,
 				AB93742B2BA34BAC005DE0F5 /* Preview Content */,
 			);
 			path = SulimEffective;
@@ -607,6 +614,27 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
+		ABE471872BA85DDD00E5A75E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AB9374292BA34BAC005DE0F5 /* Assets.xcassets */,
+				ABDDF7CE2BA74FFD00048ED9 /* Info.plist */,
+				ABE471882BA85DEA00E5A75E /* Localization */,
+				ABDDF7C02BA74B7D00048ED9 /* Font */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		ABE471882BA85DEA00E5A75E /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				ABE471892BA85E2600E5A75E /* LocalizableString.swift */,
+				ABE4718B2BA85E4000E5A75E /* LocalizableAssets.swift */,
+				ABE471972BA879F900E5A75E /* Localizable.stringsdict */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -646,10 +674,11 @@
 			};
 			buildConfigurationList = AB93741D2BA34BAB005DE0F5 /* Build configuration list for PBXProject "SulimEffective" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			developmentRegion = ru;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				ru,
 				Base,
 			);
 			mainGroup = AB9374192BA34BAB005DE0F5;
@@ -670,6 +699,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABDDF7C42BA74BCC00048ED9 /* SF-Pro-Display-Medium.ttf in Resources */,
+				ABE471952BA879F900E5A75E /* Localizable.stringsdict in Resources */,
 				AB93742D2BA34BAC005DE0F5 /* Preview Assets.xcassets in Resources */,
 				ABDDF7CD2BA74CDB00048ED9 /* SF-Pro-Display-Semibold.ttf in Resources */,
 				ABDDF7C62BA74BDD00048ED9 /* SF-Pro-Display-Regular.ttf in Resources */,
@@ -687,6 +717,7 @@
 				AB23B5562BA464D500E3830A /* View + ext.swift in Sources */,
 				AB9374522BA37E96005DE0F5 /* EntranceViewModel.swift in Sources */,
 				ABDDF7B42BA6FD6700048ED9 /* EditVacancyInputModel.swift in Sources */,
+				ABE4718C2BA85E4000E5A75E /* LocalizableAssets.swift in Sources */,
 				AB23B5432BA4410800E3830A /* EmployerSignUpView.swift in Sources */,
 				AB23B5582BA469AA00E3830A /* Binding + ext.swift in Sources */,
 				ABDDF7AA2BA6ED8500048ED9 /* EditVacancyViewModel.swift in Sources */,
@@ -730,6 +761,8 @@
 				ABDDF7BD2BA73B9100048ED9 /* DescriptionVacancyView.swift in Sources */,
 				AB9374592BA38729005DE0F5 /* TabViewItemType.swift in Sources */,
 				ABDDF7BF2BA73F0B00048ED9 /* QuestionsVacancyView.swift in Sources */,
+				AB664EAA2BA99A0E00BCD83C /* Collection + ext.swift in Sources */,
+				ABE4718A2BA85E2600E5A75E /* LocalizableString.swift in Sources */,
 				ABDDF7B12BA6F39000048ED9 /* TopEditView.swift in Sources */,
 				AB497F7D2BA594A900966C5C /* UserDefaultService.swift in Sources */,
 				ABDDF7C82BA74C1F00048ED9 /* UIFont + ext.swift in Sources */,
@@ -739,12 +772,26 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		ABE471972BA879F900E5A75E /* Localizable.stringsdict */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB664EA82BA9866C00BCD83C /* ru */,
+			);
+			name = Localizable.stringsdict;
+			sourceTree = "<group>";
+			usesTabs = 0;
+			wrapsLines = 1;
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		AB93742E2BA34BAC005DE0F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -808,6 +855,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -870,7 +918,7 @@
 				DEVELOPMENT_TEAM = 65ZT2PZTN2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SulimEffective/Info.plist;
+				INFOPLIST_FILE = SulimEffective/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -904,7 +952,7 @@
 				DEVELOPMENT_TEAM = 65ZT2PZTN2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SulimEffective/Info.plist;
+				INFOPLIST_FILE = SulimEffective/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
